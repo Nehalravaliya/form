@@ -1,0 +1,49 @@
+body{
+    font-family: "Kalam", cursive;
+}
+.ff
+{
+    background-image:linear-gradient(#36cde1df,#ebbb87,rgba(91, 214, 140, 0.769));
+     font-size: 10px;
+     font-family: "Kalam", cursive;
+     padding: 0 5% 0 5%;
+     border: 5px solid #7393B3;
+}
+input
+{
+    border: 2px solid black;
+    border-radius:5px;
+    font-size: 10px;
+    font-family: "Kalam", cursive;
+    
+}
+input:hover
+{
+    background-color:rgba(180, 87, 129, 0.531);
+}
+select
+{
+    border: 2px solid black;
+    border-radius:5px;
+    font-family: "Kalam", cursive;
+    font-size: 10px;
+
+}
+.head
+{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    font-size: 20px;
+    padding-bottom:5%;
+    padding-top:5%;
+}
+
+.check
+{
+    margin-left: 50px;
+}
+#formd img {
+    width: 100px; 
+    height: auto; 
+
+}

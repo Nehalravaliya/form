@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BIO DATA</title>
+    <link rel="stylesheet" href="six.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="six.js"></script> 
+</head>
+
+<body>
+    <center><div class="head"><b> BIO DATA</b></div></center>
+    <div class="container ff"><br>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="form">
+                    <label for="fullName" class="name">Full Name</label>
+                    <input type="text" name="user_input" id="fullName" placeholder="Enter Your Name Here" onkeydown="return /[a-zA-Z ]/i.test(event.key)"><br><br>
+                    <label for="gender" id="genderLabel">Gender</label>
+                    <input type="radio" name="gender" id="maleRadio" value="Male">
+                    <label for="maleRadio">Male</label>
+                    <input type="radio" name="gender" id="femaleRadio" value="Female" checked>
+                    <label for="femaleRadio">Female</label><br><br>
+                    <label for="DOB" id="dobLabel">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                    <label class="DOB1" id="birthTimeLabel"> Birth Time</label>
+                    <input type="time" id="birthTime" required><br><br>
+                    <label for="email" class="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email"  required><br><br>
+                    <label for="phone" id="phoneLabel">Phone Number</label>
+                    <input type="tel" id="phoneNumber" maxlength="10" placeholder="Enter Your Number" required><br><br>
+                    <label for="category" id="categoryLabel">Your Category</label>
+                    <select id="category">
+                        <option value="GENERAL">GENERAL</option>
+                        <option value="SEBC">SEBC</option>
+                        <option value="SC">SC</option>
+                        <option value="ST">ST</option>
+                    </select><br><br>
+                    <label id="languageLabel">Choose Your Favourite Programming Language</label><br>
+                    <input type="checkbox" name="check" id="htmlCheckbox" value="HTML">
+                    <label for="htmlCheckbox">HTML</label>
+                    <input type="checkbox" name="check" id="javaCheckbox" value="JAVA">
+                    <label for="javaCheckbox">JAVA</label>
+                    <input type="checkbox" name="check" id="cppCheckbox" value="C++">
+                    <label for="cppCheckbox">C++</label><br>
+                    <input type="checkbox" name="check" id="nodeCheckbox" value="Node" checked>
+                    <label for="nodeCheckbox">Node</label>
+                    <input type="checkbox" name="check" id="phpCheckbox" value="PHP">
+                    <label for="phpCheckbox">PHP</label>
+                    <input type="checkbox" name="check" id="pythonCheckbox" value="PYTHON" checked>
+                    <label for="pythonCheckbox">PYTHON</label><br><br>
+                    <label for="url" id="urlLabel">Your Favourite Website URL</label>
+                    <input type="url" id="url" placeholder="Enter Your Favourite Website URL" size="35" required><br><br>
+                    <label class="photo" id="photoLabel">Upload your Passport size Photo</label>
+                    <input type="file" id="photoUpload" accept="image/*" required><br><br>
+                    <center><button type="button" id="submitbtn" onclick="formFunction()">Submit</button><input type="reset"></center>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container ss">
+        <div class="row">
+            <div id="col-md-6">
+                <table border="1" id="formd">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Gender</th>
+                            <th>Date Of Birth</th>
+                            <th>Birth Time</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Category</th>
+                            <th>Programming Language</th>
+                            <th>Website URL</th>
+                            <th>Edit Data</th>
+                            <th>Delete Data</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody id="tableBo">
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
